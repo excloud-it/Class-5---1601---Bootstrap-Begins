@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	
+	<style>
+			ul { color:white; }
+			.navbar-orange { background-color: orange; }
+			li { border:1px solid gray; border-bottom-width: 0px; border-top-width: 0px;}
+			li a:hover { border-bottom-width: 3px; border-bottom-color: orange; border-bottom-style:solid;
+			}
+			#second { background-image: url('logo.png')}
+
+
+			@media screen and (max-width: 768px){
+				#second { background-color: white; background-image: none;} 
+
+			}
+			@media screen and (min-width: 769px) and (max-width: 996px){
+				#second { background-color: orange; background-image: none;} 
+
+			}
+	</style>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#"><img src="logo.png"></a>
+		</div>
+
+		
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span class="glyphicon glyphicon-home" style="margin-right:20px;"></span>Sign In</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Home</a></li>
+			</ul>
+		</div>
+		
+	</nav>	
+	<div class="container">
+		<div class="col-md-6 well">1</div>
+		<div class="col-md-6 well" id="second">2</div>
+	</div>
+
+</body>
+</html>
